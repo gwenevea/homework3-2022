@@ -159,7 +159,8 @@ img {
 
 /*Is max height of viewport?*/
 .text {
-  text-align: center;
+  /*text-align: center;*/
+  justify-content: center;
   max-height: 25%;
   overflow: scroll;
 }
