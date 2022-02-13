@@ -24,9 +24,10 @@ h2{
   line-height: 1.5;
 }
 
+/*remove padding?*/
 nav{
   background-color: #ddd;
-  padding: 25px 10px;;    
+  padding: 25px 10px;   
   text-align: left;   
 }
 
@@ -90,13 +91,20 @@ a.skip{
   -webkit-transition: top 1s ease-out;
   transition: left 1s ease-out;
   z-index: 1;
+  /*display: none;*/
+  position: relative;
+  right: 500px;
   /* Requirement 3 code here*/
-  
 }
-
 
 /* Requirement 4 code here*/
 
+
+nav a:focus {
+  /*text-decoration: none;*/
+  border-top: 2px solid yellow;
+  outline: none;
+}
 
 .container{
   /* Requirement 5 code here*/
@@ -108,8 +116,9 @@ a.skip{
 /* Requirements 6-10 here: */
 
 .intro {
-  /*choose color*/
-  background-image: url("imgs/header.jpg"), #DDDDDD, #858585, #707070, #B3B3B3;
+  /*choose color after or before image?*/
+  background-image: url("../images/header.jpg");
+  background-color: #707070;
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -121,6 +130,22 @@ a.skip{
 .about, .clients, .method, .contact {
   grid-column: 2 / span 1;
   overflow: hidden;
+}
+
+.about, .about-image {
+  grid-row: 1;
+}
+
+.clients, .clients-image {
+  grid-row: 2;
+}
+
+.method, .method-image {
+  grid-row: 3;
+}
+
+.contact, .contact-image {
+  grid-row: 4;
 }
 
 img {
