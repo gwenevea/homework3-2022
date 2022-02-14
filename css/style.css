@@ -161,7 +161,10 @@ img {
 .text {
   /*text-align: center;*/
   /*justify-self: center;*/
-  align-self: center;
+  /*align-self: center;*/
+  /*justify-content: space-around;*/
+  /*align-items: center;*/
+  align-content: center;
   max-height: 25%;
   overflow: scroll;
 }
@@ -189,15 +192,17 @@ img {
 
   .container {
     display: grid;
-    grid-template: 50px auto 500px auto 50px / 300px 300px 300px 300px;
+    grid-template: 300px 300px 300px 300px / 50px auto 500px auto 50px;
   }
 
-  .about .method, .clients-image, .contact-image {
+  .about, .method, .clients-image, .contact-image {
     grid-column: 3 / span 2;
+    /*span 2 or 3?*/
   }
 
   .clients, .contact, .about-image, .method-image {
     grid-column: 2 / span 2;
+      /*span 2 or 3?*/
   }
 
 }
