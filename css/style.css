@@ -161,10 +161,10 @@ img {
 .text {
   /*text-align: center;*/
   /*justify-self: center;*/
-  /*align-self: center;*/
+  align-self: center;
   /*justify-content: space-around;*/
   /*align-items: center;*/
-  align-content: center;
+  /*align-content: center;*/
   max-height: 25%;
   overflow: scroll;
 }
