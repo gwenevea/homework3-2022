@@ -91,9 +91,8 @@ a.skip{
   -webkit-transition: top 1s ease-out;
   transition: left 1s ease-out;
   z-index: 1;
-  /*display: none;*/
-  position: relative;
-  right: 500px;
+  position: absolute;
+  left: -500px;
   /* Requirement 3 code here*/
 }
 
@@ -165,7 +164,7 @@ img {
   /*justify-content: space-around;*/
   /*align-items: center;*/
   /*align-content: center;*/
-  max-height: 25%;
+  max-height: 25vh;
   overflow: scroll;
 }
 
@@ -192,7 +191,8 @@ img {
 
   .container {
     display: grid;
-    grid-template: 300px 300px 300px 300px / 50px auto 500px auto 50px;
+    grid-template-rows: 300px 300px 300px 300px; 
+    grid-template-columns: 50px auto 500px auto 50px;
   }
 
   .about, .method, .clients-image, .contact-image {
